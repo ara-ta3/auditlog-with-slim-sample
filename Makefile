@@ -9,6 +9,9 @@ server: vendor
 vendor:
 	$(MAKE) install
 
+update: $(COMPOSER)
+	$(PHP) $(COMPOSER) update
+
 install: $(COMPOSER)
 	$(PHP) $(COMPOSER) install
 
